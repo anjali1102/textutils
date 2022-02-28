@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            Navbar
+            {props.title}
           </a>
           <button
             class="navbar-toggler"
@@ -27,7 +27,7 @@ export default function Navbar() {
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/">
-                  Link
+                  {props.link}
                 </a>
               </li>
             </ul>
@@ -47,3 +47,10 @@ export default function Navbar() {
       </nav>
   )
 }
+
+
+
+ /* Whatever text on navbar you want to change, make take{props.title} and goto app.js component and give title="give whatever name  you want to display " */
+
+
+// props are read only
