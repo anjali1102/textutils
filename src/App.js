@@ -1,14 +1,16 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import TextForm from "./components/TextForm";
 
 function App() {
   return (
     <>
-      {/* <Navbar title="TextUtils" link="Link here" /> */}
-      
-      <Navbar />  
-      {/* 10 line will print take from default propType */}
+      <Navbar title="TextUtils" link="Link here" />
+      {/* <Navbar /> */}
 
+      <div className="container my-3">
+        <TextForm heading="Enter the text to analyze 👇" />
+      </div>
     </>
   );
 }
