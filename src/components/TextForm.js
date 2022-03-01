@@ -45,10 +45,10 @@ export default function TextForm(props) {
         <p>
           {text.split(" ").length} words and {text.length} characters
         </p>
+        <h3>Read Time</h3>
+        <p>{0.008 * text.split(" ").length} Minutes</p>
         <h3>Preview 👀</h3>
-        <p>
-          {text}
-        </p>
+        <p>{text}</p>
       </div>
     </>
   );
